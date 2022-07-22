@@ -128,7 +128,7 @@ Config.prototype.configure = function configure (config) {
    * Root realm URL.
    * @type {String}
    */
-  this.realmUrl = this.authServerUrl + '/realms/' + this.realm
+  this.realmUrl = (config.baseRealmUrl).replace(/\/*$/gi, '') + '/realms/' + this.realm
 
   /**
    * Root realm admin URL.
