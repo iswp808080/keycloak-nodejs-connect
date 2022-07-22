@@ -32,7 +32,7 @@ const Rotation = require('./rotation')
  * @constructor
  */
 function GrantManager (config) {
-  this.realmUrl = config.realmUrl
+  this.realmUrl = config.backRealmUrl
   this.clientId = config.clientId
   this.secret = config.secret
   this.publicKey = config.publicKey
