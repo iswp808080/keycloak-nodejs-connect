@@ -28,6 +28,7 @@ const jwkToPem = require('jwk-to-pem')
  */
 function Rotation (config) {
   this.realmUrl = config.realmUrl
+  this.backRealmUrl = config.backRealmUrl
   this.minTimeBetweenJwksRequests = config.minTimeBetweenJwksRequests
   this.jwks = []
   this.lastTimeRequesTime = 0
